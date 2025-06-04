@@ -46,32 +46,37 @@ void setup() {
   // Configurar o pino do alto-falante
   audio.speakerPin = AUDIO_PIN;
   audio.setVolume(5); // 0 (mín) ~ 7 (max)
-  Serial.println("Sistema pronto.");
+  Serial.println("Sistema pronto. QUE COMEÇE O ROCK'N ROLL!!!");
 }
 
 void loop(){
   if (toqueDetectado(PRATO)){
     audio.play("prato.wav");
+    Serial.println("PRATO");
     delay(200);
   }
 
   if (toqueDetectado(CAIXA)){
     audio.play("caixa.wav");
+    Serial.println("CAIXA");
     delay(200);
   }
 
   if (toqueDetectado(BUMBO)){
     audio.play("bumbo.wav");
+    Serial.println("BUMBO");
     delay(200);
   }
 
   if (toqueDetectado(CHIMBAL)){
     audio.play("chimbal.wav");
+    Serial.println("CHIMBAL");
     delay(200);
   }
 
   if (toqueDetectado(TOM)){
     audio.play("tom.wav");
+    Serial.println("TOM");
     delay(200);
   }
 }
