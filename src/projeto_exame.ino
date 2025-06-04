@@ -15,7 +15,7 @@
 // Pino PWM para áudio (recomendado: 9 ou 10 no Arduino Mega)
 #define AUDIO_PIN 9
 
-// Ajustando a sensibilidade (regular conforme necessário
+// Ajustando a sensibilidade (regular conforme necessário)
 #define LIMIAR_TOQUE 100
 
 // Instância do objeto de áudio
